@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PULSEFIT — Твоє тіло. Твоя сила. Твій результат.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">PULSEFIT</div>
+        <nav>
+            <ul>
+                <li><a href="#about">Про нас</a></li>
+                <li><a href="#trainers">Тренери</a></li>
+                <li><a href="#pricing">Абонементи</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
+        <a href="#contact" class="btn-header">Записатися</a>
+    </header>
+
+    <main>
+        <section id="about" class="hero">
+            <h1>Твоє тіло. Твоя сила. Твій результат.</h1>
+            <p>Сучасний тренажерний зал, кваліфіковані тренери та індивідуальні програми для досягнення ваших цілей.</p>
+            <div>
+                <a href="#contact" class="btn-link">Безкоштовне перше тренування</a>
+                <a href="#pricing" class="btn-link">Обрати абонемент</a>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <h2 class="section-title">Чому обирають Pulse Fitness</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>Преміум обладнання</h3>
+                    <p>Новітні тренажери від провідних світових брендів для безпечних та ефективних тренувань.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Топові тренери</h3>
+                    <p>Сертифіковані наставники, які розроблять персональний план харчування та занять.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Комфортна зона відпочинку</h3>
+                    <p>Просторі душові, фінська сауна та фітнес-бар із протеїновими коктейлями.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Зручний графік</h3>
+                    <p>Працюємо без вихідних з 07:00 до 23:00, щоб ви встигали тренуватися у будь-який час.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="trainers">
+            <h2 class="section-title">Наші Тренери</h2>
+            <div class="trainers-grid">
+                <div class="trainer-card">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80" alt="Олексій Ковальов">
+                    <div class="trainer-info">
+                        <h3>Олексій Ковальов</h3>
+                        <p>Силовий тренінг & Кросфіт</p>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80" alt="Марина Соколова">
+                    <div class="trainer-info">
+                        <h3>Марина Соколова</h3>
+                        <p>Фітнес-бікіні & Стретчинг</p>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=600&q=80" alt="Дмитро Шевченко">
+                    <div class="trainer-info">
+                        <h3>Дмитро Шевченко</h3>
+                        <p>Реабілітація & Функціонал</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <h2 class="section-title">Оберіть свій Абонемент</h2>
+            <div class="toggle-container">
+                <button class="toggle-btn active" id="btn-month">1 Місяць</button>
+                <button class="toggle-btn" id="btn-year">1 Рік -20%</button>
+            </div>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Старт</h3>
+                    <p style="color: var(--text-muted); font-size: 13px;">Ідеально для початківців</p>
+                    <div class="price" id="price-start">800 грн /міс</div>
+                    <ul class="features-list">
+                        <li>✓ Доступ з 08:00 до 16:00</li>
+                        <li>✓ Безлімітний тренажерний зал</li>
+                        <li>✓ Вводне тренування з тренером</li>
+                        <li>✓ Відвідування сауни</li>
+                    </ul>
+                    <a href="#contact" class="btn-select">Обрати</a>
+                </div>
+
+                <div class="price-card popular">
+                    <span class="badge">Популярний</span>
+                    <h3>Безліміт</h3>
+                    <p style="color: var(--text-muted); font-size: 13px;">Повна свобода тренувань</p>
+                    <div class="price" id="price-unlim">1200 грн /міс</div>
+                    <ul class="features-list">
+                        <li>✓ Безліміт у будь-який час (7:00-23:00)</li>
+                        <li>✓ Всі групові заняття</li>
+                        <li>✓ Доступ до сауни</li>
+                        <li>✓ Заморозка картки на 14 днів</li>
+                    </ul>
+                    <a href="#contact" class="btn-select">Обрати</a>
+                </div>
+
+                <div class="price-card">
+                    <h3>PRO + Тренер</h3>
+                    <p style="color: var(--text-muted); font-size: 13px;">Максимальний результат</p>
+                    <div class="price" id="price-pro">2500 грн /міс</div>
+                    <ul class="features-list">
+                        <li>✓ Безлімітний доступ 24/7</li>
+                        <li>✓ 8 персональних тренувань/міс</li>
+                        <li>✓ Індивідуальна програма харчування</li>
+                        <li>✓ Доступ до VIP-роздягальні</li>
+                    </ul>
+                    <a href="#contact" class="btn-select">Обрати</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-box">
+                <h2 style="font-size: 24px; margin-bottom: 10px;">Запишись на перше тренування</h2>
+                <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 25px;">Залиш свої дані, і наш менеджер зателефонує тобі протягом 15 хвилин для уточнення деталей.</p>
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label>Ваше ім'я</label>
+                        <input type="text" placeholder="Ваше Імя" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Номер телефону</label>
+                        <input type="tel" placeholder="Ваш Номер" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Надіслати заявку</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pulse Fitness. Всі права захищені.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
